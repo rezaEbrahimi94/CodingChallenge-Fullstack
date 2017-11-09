@@ -11,7 +11,6 @@ before_install:
 
 before_script:
   - cp _env/travis.env .env
-  - mysql -e 'CREATE DATABASE codingchallenge_test;'
   - travis_retry composer self-update
   - travis_retry composer install
   - php artisan migrate
