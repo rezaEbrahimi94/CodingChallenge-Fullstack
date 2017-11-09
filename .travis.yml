@@ -3,8 +3,18 @@ language: php
 php:
   - 7.1
 
+services:
+  - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE codingchallenge_test;'
+
 before_script:
+  - cp _env/travis.env .env
+  - mysql -e 'CREATE DATABASE codingchallenge_test;'
   - travis_retry composer self-update
   - travis_retry composer install
+  - php artisan migrate
+  - php artisan db:seed
 
 script: vendor/bin/phpunit --verbose
