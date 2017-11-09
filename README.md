@@ -22,6 +22,8 @@ When a user clicks on the book name, make an ajax request to (_/api/metadata/rea
 
 How you achieve this result is completely up to you.
 
+There is an optional task defined in the [optional.md](optional.md) file.
+
 Bonus points (in order of importance):
 
 * Following the [AirBnB](https://github.com/airbnb/javascript) style guide (already configured in JSLinter)
