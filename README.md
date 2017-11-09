@@ -26,10 +26,8 @@ There is an optional task defined in the [optional.md](optional.md) file.
 
 Bonus points (in order of importance):
 
-* Following the [AirBnB](https://github.com/airbnb/javascript) style guide (already configured in JSLinter)
-* Following the [PSR-2](http://www.php-fig.org/psr/psr-2/) style guide.
-* Not using jQuery for the AJAX call
 * Using ES6 javascript
+* Not using jQuery for the AJAX call
 * Applying your own custom CSS
 * Displaying the metadata on the page instead of logging it to the console
 * Unit testing
@@ -37,6 +35,10 @@ Bonus points (in order of importance):
 
 Please note that the time taken to complete this challenge will be taken into consideration, starting when you fork the repository and ending with the pull request.
 
+Please follow these coding guidelines:
+
+* PHP [PSR-2](http://www.php-fig.org/psr/psr-2/) style guide.
+* JS [AirBnB](https://github.com/airbnb/javascript) style guide (already configured in JSLinter)
 
 ### Required Knowledge
 
