@@ -60,7 +60,7 @@ Recommended
 ### Software requirements
 * [Composer](https://getcomposer.org/)
 * [NPM](https://www.npmjs.com/get-npm)
-* Local webserver (PHP 7.1, MySQL 5.5+)
+* Local webserver running PHP 7.1 and MySQL 5.5+ (if you are running OSx [Valet](https://laravel.com/docs/5.5/valet) is a quick solution) 
 
 #### Install
 
@@ -69,12 +69,16 @@ Clone and create the .env file (an example has been provided in the __env_ folde
 Run:
 ```bash 
 composer install
+cp _env/local.env .env
 php artisan migrate
 php artisan db:seed
 npm install
+npm run dev
 ```
 
-Make sure everything is working as expected running the provided tests
+Make sure everything is working on your local server. Visiting / should display "_Welcome!_".
+Double check by running the provided unit tests.
+
 ```bash
 vendor/bin/phpunit --verbose
 ```
