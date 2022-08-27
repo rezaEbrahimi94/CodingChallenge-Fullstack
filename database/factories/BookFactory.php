@@ -10,8 +10,5 @@ $factory->define(App\Models\Book::class, function (Faker $faker) {
     return [
         'name' => $name,
         'isbn' => $isbn,
-        'shelf_id' => function () {
-            return factory(\App\Models\Shelf::class)->create()->getKey();
-        }
     ];
 });

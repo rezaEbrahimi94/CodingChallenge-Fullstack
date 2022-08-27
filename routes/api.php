@@ -14,3 +14,5 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/metadata/read/all', ['as'=> 'api.metadata.all', 'uses' => 'ApiController@metadata']);
+Route::get('/shelf/{slug}/read', ['as'=> 'api.metadata.shelf', 'uses' => 'ApiController@shelf']);
+Route::get('/books/{id}', ['as'=> 'api.metadata.book', 'uses' => 'ApiController@book']);
